@@ -1,6 +1,24 @@
 # 💳 CardDataAnalysis
 > ElasticSearch, Kibana를 활용한 카드사의 실데이터 시각화
 
+<br>
+
+## 목차
+1. [프로젝트 소개](#-프로젝트-소개)
+2. [기술 스택](#-기술-스택)
+3. [ElasticSearch 7.17 버전 선정 이유](#-elasticsearch-717-버전-선정-이유)
+4. [ELK 설치 과정 및 설정](#%EF%B8%8F-elk-설치-과정-및-설정)
+5. [Kibana 시각화](#-kibana-시각화)
+6. [트러블 슈팅](#-트러블-슈팅)
+7. [회고](#-회고)
+
+<br>
+
+---
+
+<br>
+
+
 ## 🤝 팀원
 |<img src="https://avatars.githubusercontent.com/u/98368034?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/49242646?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/103468518?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/103871252?v=4" width="150" height="150"/>|
 |:-:|:-:|:-:|:-:|
@@ -12,7 +30,7 @@
 
 <br>
 
-## 📒 프로젝트 개요
+## 📒 프로젝트 소개
 본 프로젝트는 카드사의 실제 소비 데이터를 활용하여, 연령대별 소비 패턴과 회원 등급 분포를 분석하고 시각화한 것입니다. 주요 분석 항목으로는 연령대별 총 이용금액 평균, 연령대별 업종별 이용 평균, 그리고 연령대별 회원 등급 비율을 포함하고 있습니다. 이를 통해 소비자들의 연령대별 카드 사용 트렌드를 파악하고, 다양한 업종에서의 소비 경향과 회원 등급에 따른 카드 사용 특성을 분석하였습니다.
 
 ### **분석 목표**:
