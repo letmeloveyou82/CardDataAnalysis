@@ -52,3 +52,32 @@
 #### 1️⃣ [Ubuntu에 기존에 설치했던 ElasticSearch 8 버전 삭제](1.%20Uninstall-ElasticSearch-8-from-Ubuntu.md)
 #### 2️⃣ [Ubuntu에 ELK 스택 (Elasticsearch, Logstash, Kibana) 7.17.27 버전 설치](2.%20Install-ELK-7.17.27-on-Ubuntu.md)
 #### 3️⃣ [Ubuntu에 설치한 Elasticsearch, Kibana를 Windows로 접속하기 위한 수정사항](3.%20Configure-Elasticsearch-Kibana-Access-from-Windows.md)
+
+## 🌠트러블 슈팅
+### 문제 발생 
+elasticsearch.yml 파일에서 network.host의 값을 0.0.0.0으로 수정하고 elasticsearch 실행시 에러 발생
+![Image](https://github.com/user-attachments/assets/6d2b5c7d-a43d-4dd8-b1db-f71ab0e0ce9a)
+
+### 문제 원인 분석
+sudo journalctl -xeu elasticsearch.service 명령어를 통해서 로그 분석
+<br>
+
+**에러메시지** 
+``` 
+Jan 24 16:04:21 myserver1 systemd-entrypoint[7102]: Jan 24, 2025 7:04:21 AM sun.util.locale.provider.LocaleProviderAdapter <clinit>
+Jan 24 16:04:21 myserver1 systemd-entrypoint[7102]: WARNING: COMPAT locale provider will be removed in a future release
+Jan 24 16:04:32 myserver1 systemd-entrypoint[7102]: ERROR: [1] bootstrap checks failed. You must address the points described in the following [1] lines befo>
+Jan 24 16:04:32 myserver1 systemd-entrypoint[7102]: bootstrap check failure [1] of [1]: the default discovery settings are unsuitable for production use; at >
+Jan 24 16:04:32 myserver1 systemd-entrypoint[7102]: ERROR: Elasticsearch did not exit normally - check the logs at /var/log/elasticsearch/elasticsearch.log
+Jan 24 16:04:32 myserver1 systemd[1]: elasticsearch.service: Main process exited, code=exited, status=78/CONFIG
+```
+<br> 
+
+
+### 문제 해결 방법
+테스트 환경에서는 discovery.type을 single-node로 설정하여 클러스터 설정을 간소화 -> elasticsearch.yml에 해당 설정 추가
+<br>
+![Image](https://github.com/user-attachments/assets/be709eb0-c49d-450a-8727-28372d90c4c5)
+
+### 해결 결과
+![Image](https://github.com/user-attachments/assets/df315d16-7b8f-4f8a-b58b-921f3a00d444)
