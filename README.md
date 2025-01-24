@@ -1,4 +1,4 @@
-# CardDataAnalysis
+# 💳 CardDataAnalysis
 > ElasticSearch, Kibana를 활용한 우리 카드 데이터 시각화
 
 ## 📒 프로젝트 개요
@@ -37,5 +37,6 @@
 <br>
 
 ## ⚙️ ELK 설치 과정 및 설정
-#### 1️⃣ Ubuntu에 기존에 설치했던 ElasticSearch 8 버전 삭제
-#### 2️⃣ Ubuntu에 ELK 스택 (Elasticsearch, Logstash, Kibana) 7.17.27 버전 설치
+> 링크를 클릭하시면, 명령어 정리된 Markdown 파일을 확인하실 수 있어요😊
+#### 1️⃣ [Ubuntu에 기존에 설치했던 ElasticSearch 8 버전 삭제](Uninstall-ElasticSearch-8-from-Ubuntu.md)
+#### 2️⃣ [Ubuntu에 ELK 스택 (Elasticsearch, Logstash, Kibana) 7.17.27 버전 설치](Install-ELK-7.17.27-on-Ubuntu.md)
