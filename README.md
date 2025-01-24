@@ -47,6 +47,55 @@
 
 <br>
 
+## 📌 ElasticSearch 7.17 버전 선정 이유
+
+### **1. 대규모 데이터 세트 빠른 검색 용이**
+
+- Elasticsearch 6.x에서 사용되던 `Type` 개념이 `Index`로 변경되었습니다.
+- `Index`는 JSON 형태로 여러 `field`와 `value`를 가질 수 있는 구조로, 비정규화된 데이터를 구조적으로 저장할 수 있다는 장점이 있습니다
+- 인덱스는 단어 및 숫자의 위치 데이터를 **토큰화**하여 문서를 식별하는 역 인덱스 작업을 통해 빠른 범위 검색과 유사 항목 쿼리를 가능하게 합니다.
+- 이를 통해 대규모의 데이터 세트에서 빠른 범위 검색과 유사 항목 쿼리를 허용하여 데이터 분석을 빠르게 수행할 수 있습니다.
+
+<br>
+
+### **2. 가장 최근의 안정된 버전**
+
+- 공식 ElasticSearch 도커 이미지에서 지속적으로 관리되는 버전입니다.
+- 가장 최근의 버그를 수정한 가장 최신 버전입니다. <br>
+
+  <img src="https://github.com/user-attachments/assets/8a0fd034-7b7a-4acb-8fe7-50c42e65291b" style="border: 3px solid black; padding: 5px;">
+
+  
+<br>
+
+### **3. ubuntu22.04버전 지원 (2024-08-08 기준)**
+
+- 이전 Elasticsearch 버전은 Ubuntu 22.04에서 안정적으로 지원되지 않지만, **7.17 버전**에서는 지원됩니다.
+    
+    ※ Ubuntu 24.04 버전의 호환 여부는 명시되지 않음
+    
+
+    |  | Ubuntu20.04 | Ubuntu22.04 |
+    | --- | --- | --- |
+    | Elasticsearch 7.11.x | ✔ |  |
+    | Elasticsearch 7.17.x | ✔ | ✔ |
+
+<br>
+
+### 참고자료
+
+- https://www.elastic.co/kr/blog/what-is-an-elasticsearch-index
+- https://hub.docker.com/layers/library/elasticsearch/7.17.27/images/sha256-07e9262b856006959e384de7ca9587bc5c6da024ca7042216a9ea26efe4c69c1
+- https://www.elastic.co/kr/support/matrix/
+
+
+
+
+<br>
+
+---
+
+<br>
 ## ⚙️ ELK 설치 과정 및 설정
 > 링크를 클릭하시면, 명령어 정리된 Markdown 파일을 확인하실 수 있어요😊
 #### 1️⃣ [Ubuntu에 기존에 설치했던 ElasticSearch 8 버전 삭제](1.%20Uninstall-ElasticSearch-8-from-Ubuntu.md)
