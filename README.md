@@ -53,7 +53,32 @@
 #### 2️⃣ [Ubuntu에 ELK 스택 (Elasticsearch, Logstash, Kibana) 7.17.27 버전 설치](2.%20Install-ELK-7.17.27-on-Ubuntu.md)
 #### 3️⃣ [Ubuntu에 설치한 Elasticsearch, Kibana를 Windows로 접속하기 위한 수정사항](3.%20Configure-Elasticsearch-Kibana-Access-from-Windows.md)
 
-## 🌠트러블 슈팅
+<br>
+
+---
+
+<br>
+
+## 📊 Kibana 시각화
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/21707c69-f41b-4ae1-b1d4-df3273348b44" alt="Image"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/e37266b0-f140-40ad-bbe5-b773441f3a8c" alt="Image"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/7e4b0890-6abe-4918-bf33-78a03e39cafc" alt="Image"></td>
+  </tr>
+</table>
+
+<br>
+
+---
+
+<br>
+
+## 🌠 트러블 슈팅
 ### 문제 발생 
 elasticsearch.yml 파일에서 network.host의 값을 0.0.0.0으로 수정하고 elasticsearch 실행시 에러 발생
 ![Image](https://github.com/user-attachments/assets/6d2b5c7d-a43d-4dd8-b1db-f71ab0e0ce9a)
