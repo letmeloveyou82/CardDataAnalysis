@@ -98,10 +98,17 @@
 <br>
 
 ## ⚙️ ELK 설치 과정 및 설정
-> 링크를 클릭하시면, 명령어 정리된 Markdown 파일을 확인하실 수 있어요😊
+> 링크를 클릭하시면, 명령어 정리된 Markdown 파일을 확인하실 수 있습니다😊
 #### 1️⃣ [Ubuntu에 기존에 설치했던 ElasticSearch 8 버전 삭제](1.%20Uninstall-ElasticSearch-8-from-Ubuntu.md)
 #### 2️⃣ [Ubuntu에 ELK 스택 (Elasticsearch, Logstash, Kibana) 7.17.27 버전 설치](2.%20Install-ELK-7.17.27-on-Ubuntu.md)
 #### 3️⃣ [Ubuntu에 설치한 Elasticsearch, Kibana를 Windows로 접속하기 위한 수정사항](3.%20Configure-Elasticsearch-Kibana-Access-from-Windows.md)
+
+<br>
+
+### 🎉 한 명의 IP 주소로 동시 접속 성공 
+![image](https://github.com/user-attachments/assets/9ade53b4-f0e0-4cba-b5c5-19e7688f6c8c)
+
+
 
 <br>
 
