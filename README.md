@@ -1,6 +1,17 @@
 # 💳 CardDataAnalysis
 > ElasticSearch, Kibana를 활용한 우리 카드 데이터 시각화
 
+## 🤝 팀원
+|<img src="https://avatars.githubusercontent.com/u/98368034?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/49242646?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/103468518?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/103871252?v=4" width="150" height="150"/>|
+|:-:|:-:|:-:|:-:|
+|장수현<br/>[@Aunsxm](https://github.com/Aunsxm)|최윤정<br/>[@letmeloveyou82](https://github.com/letmeloveyou82)|김창성<br/>[@kcs19](https://github.com/kcs19)|김우현<br/>[@woody6624](https://github.com/woody6624)|
+
+<br>
+
+---
+
+<br>
+
 ## 📒 프로젝트 개요
 본 프로젝트는 우리카드의 거래 데이터를 활용하여, 연령대별 소비 패턴과 회원 등급 분포를 분석하고 시각화한 것입니다. 주요 분석 항목으로는 연령대별 총 이용금액 평균, 연령대별 업종별 이용 평균, 그리고 연령대별 회원 등급 비율을 포함하고 있습니다. 이를 통해 소비자들의 연령대별 카드 사용 트렌드를 파악하고, 다양한 업종에서의 소비 경향과 회원 등급에 따른 카드 사용 특성을 분석하였습니다.
 
@@ -40,3 +51,4 @@
 > 링크를 클릭하시면, 명령어 정리된 Markdown 파일을 확인하실 수 있어요😊
 #### 1️⃣ [Ubuntu에 기존에 설치했던 ElasticSearch 8 버전 삭제](Uninstall-ElasticSearch-8-from-Ubuntu.md)
 #### 2️⃣ [Ubuntu에 ELK 스택 (Elasticsearch, Logstash, Kibana) 7.17.27 버전 설치](Install-ELK-7.17.27-on-Ubuntu.md)
+#### 3️⃣ [Ubuntu에 설치한 Elasticsearch, Kibana를 Windows로 접속하기 위한 수정사항](Configure-Elasticsearch-Kibana-Access-from-Windows.md)
